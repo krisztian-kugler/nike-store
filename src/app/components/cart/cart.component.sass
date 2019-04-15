@@ -1,0 +1,109 @@
+@import ../../../assets/init
+
+\:host
+
+  .dimmed-layer
+    position: fixed
+    top: 50px
+    left: 0
+    width: 100%
+    height: calc(100vh - 50px)
+    background-color: rgba(0, 0, 0, .5)
+
+  .cart
+    position: fixed
+    z-index: 9999
+    top: 50px
+    right: -320px
+    display: flex
+    flex-direction: column
+    width: 320px
+    height: calc(100vh - 50px)
+    border-top: 1px solid rgb(233, 233, 233)
+    background-color: rgb(246, 246, 246)
+    overflow: hidden
+    transition: right 250ms
+
+    &.open
+      right: 0
+
+    .header
+      position: relative
+      z-index: 9999
+      display: flex
+      justify-content: space-between
+      align-items: flex-end
+      padding: 15px
+      background-color: white
+      box-shadow: 0 0 3px rgba(0, 0, 0, .3)
+
+      .items-length
+        display: flex
+        align-items: center
+        height: 24px
+        font-size: 12px
+        font-weight: 600
+
+      .empty-cart
+        display: flex
+        align-items: center
+        font-size: 12px
+        font-weight: 600
+        cursor: pointer
+
+    .items
+      height: 100%
+      overflow-y: scroll
+      padding: 15px
+      overflow: -moz-scrollbars-none
+      -ms-overflow-style: none
+
+      &::-webkit-scrollbar
+        width: 0 !important
+      
+    .footer
+      position: relative
+      z-index: 9999
+      padding: 15px
+      background-color: white
+      box-shadow: 0 0 3px rgba(0, 0, 0, .3)
+
+      .total
+        display: flex
+        justify-content: space-between
+        margin-bottom: 15px
+        font-weight: 600
+
+      .to-checkout
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 100%
+        height: 40px
+        border: none
+        background-color: $color-highlight
+        color: white
+        font-family: Montserrat, sans-serif
+        font-size: 16px
+        font-weight: 600
+        text-transform: uppercase
+        outline: none
+        cursor: pointer
+
+        &:hover
+          background-color: $color-highlight-darker
+
+        img
+          margin-right: 10px
+
+        p
+          font-size: 12px
+
+    .empty
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 100%
+      height: 100%
+      color: rgb(133, 133, 133)
+      font-weight: 600

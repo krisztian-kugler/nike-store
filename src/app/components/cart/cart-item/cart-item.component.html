@@ -1,0 +1,18 @@
+<img class="product-image" src="{{ cartItem.product.image }}" alt="{{ cartItem.product.name }}" />
+
+<div class="product">
+  <p class="name">{{ cartItem.product.name }}</p>
+  <p class="size">
+    {{ cartItem.product.selectedSize }} <span *ngIf="cartItem.product.colors.length > 1">, {{ cartItem.product.selectedColor.name }}</span>
+  </p>
+  <div class="quantity-price-wrapper">
+    <div class="quantity-group">
+      <div class="decrease" (click)="decrease()"></div>
+      <p class="quantity">{{ cartItem.quantity }}</p>
+      <div class="increase" (click)="increase()"></div>
+    </div>
+    <div class="price">{{ "€" + cartItem.totalPrice }}</div>
+  </div>
+</div>
+
+<div class="remove" (click)="remove()"></div>

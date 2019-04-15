@@ -1,0 +1,33 @@
+<div class="dimmed-layer" *ngIf="open" (click)="open = false" @dim></div>
+
+<div class="cart" [ngClass]="{ open: open }">
+  <ng-template *ngIf="items.length; then showItems; else empty"></ng-template>
+
+  <ng-template #showItems>
+    <header class="header">
+      <div class="items-length">{{ items.length === 1 ? items.length + " item" : items.length + " items" }}</div>
+      <div class="empty-cart">
+        <img src="assets/images/trash_dark.png" alt="Trash can" />
+        <p (click)="emptyCart()">Empty cart</p>
+      </div>
+    </header>
+    <div class="items">
+      <nike-cart-item *ngFor="let item of items" [cartItem]="item" (removeItem)="onRemoveItem($event)"> </nike-cart-item>
+    </div>
+
+    <footer class="footer">
+      <div class="total">
+        <p>Total:</p>
+        <p>{{ "€" + total }}</p>
+      </div>
+      <button class="to-checkout">
+        <img src="assets/images/card_light.png" alt="Card" />
+        <p>To Checkout</p>
+      </button>
+    </footer>
+  </ng-template>
+
+  <ng-template #empty>
+    <div class="empty">You have no items in your cart</div>
+  </ng-template>
+</div>

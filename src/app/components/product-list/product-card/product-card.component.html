@@ -1,0 +1,32 @@
+<div class="discount" *ngIf="product.salePrice">%</div>
+<img class="product-image" src="{{ product.image }}" alt="{{ product.name }}" />
+<p class="name">{{ product.name }}</p>
+<p class="price">
+  <span class="inactive" *ngIf="product.salePrice">{{ "€" + product.normalPrice }} </span>
+  <span [ngClass]="{ highlight: product.salePrice }">{{ product.salePrice ? "€" + product.salePrice : "€" + product.normalPrice }}</span>
+</p>
+<div class="variations">
+  <div class="size" title="Select size" (click)="showSizes = true">
+    <small>Size:</small>
+    <p>{{ product.selectedSize }}</p>
+  </div>
+  <div class="color" title="Select color" *ngIf="product.colors.length > 1" (click)="showColors = true">
+    <small>Color:</small>
+    <p>{{ product.selectedColor.name }}</p>
+  </div>
+</div>
+<button class="add-to-cart" (click)="addToCart()">
+  <img src="assets/images/cart_light.png" alt="Cart" />
+  <p>Add to Cart</p>
+</button>
+
+<div class="dimmed" *ngIf="showColors || showSizes" (click)="showSizes = false; showColors = false" @dim></div>
+<div class="sizes" [ngClass]="{ open: showSizes }">
+  <div class="size" *ngFor="let size of product.sizes" (click)="selectSize(size)">{{ size }}</div>
+</div>
+<div class="colors" [ngClass]="{ open: showColors }">
+  <div class="color" *ngFor="let color of product.colors" (click)="selectColor(color)">
+    <img src="{{ color.image }}" alt="" />
+    <small>{{ color.name }}</small>
+  </div>
+</div>

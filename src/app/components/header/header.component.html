@@ -1,0 +1,18 @@
+<nav class="navbar">
+  <img class="logo" src="assets/images/nike_logo.png" alt="logo" />
+
+  <ul class="menu">
+    <li *ngFor="let menuItem of menuItems">{{ menuItem }}</li>
+  </ul>
+
+  <div class="cart-button" (click)="toggleCart()">
+    <img class="cart" src="assets/images/cart_dark.png" alt="cart" />
+    <div class="counter">{{ counter }}</div>
+  </div>
+
+  <div class="mobile-menu-button">
+    <span class="line"></span>
+    <span class="line"></span>
+    <span class="line"></span>
+  </div>
+</nav>

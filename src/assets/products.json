@@ -1,0 +1,207 @@
+[
+  {
+    "id": 1,
+    "image": "assets/images/products/1/air_max_720_1.png",
+    "name": "Nike Air Max 720",
+    "normalPrice": 190,
+    "salePrice": 0,
+    "sizes": [38, 38.5, 41, 42, 43, 43.5, 44, 46, 47],
+    "colors": [
+      {
+        "id": 1,
+        "name": "Frog",
+        "image": "assets/images/products/1/air_max_720_1.png"
+      },
+      {
+        "id": 2,
+        "name": "Snake",
+        "image": "assets/images/products/1/air_max_720_2.png"
+      },
+      {
+        "id": 3,
+        "name": "Lava",
+        "image": "assets/images/products/1/air_max_720_3.png"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "image": "assets/images/products/2/air_vapormax_2019_1.png",
+    "name": "Nike Air VaporMax 2019",
+    "normalPrice": 190,
+    "salePrice": 130,
+    "sizes": [40, 41, 42, 43, 44, 45, 45.5],
+    "colors": [
+      {
+        "id": 1,
+        "name": "Youthful",
+        "image": "assets/images/products/2/air_vapormax_2019_1.png"
+      },
+      {
+        "id": 2,
+        "name": "Black Gold",
+        "image": "assets/images/products/2/air_vapormax_2019_2.png"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "image": "assets/images/products/3/air_max_deluxe_1.png",
+    "name": "Nike Air Max Deluxe",
+    "normalPrice": 180,
+    "salePrice": 0,
+    "sizes": [37, 39, 40, 41, 41.5, 42, 42.5, 44, 45, 46, 46.5, 47],
+    "colors": [
+      {
+        "id": 1,
+        "name": "Laser",
+        "image": "assets/images/products/3/air_max_deluxe_1.png"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "image": "assets/images/products/4/air_max_plus_se_1.png",
+    "name": "Nike Air Max Plus SE",
+    "normalPrice": 180,
+    "salePrice": 0,
+    "sizes": [40, 40.5, 41, 42, 44, 46],
+    "colors": [
+      {
+        "id": 1,
+        "name": "Metallic",
+        "image": "assets/images/products/4/air_max_plus_se_1.png"
+      },
+      {
+        "id": 2,
+        "name": "Future",
+        "image": "assets/images/products/4/air_max_plus_se_2.png"
+      },
+      {
+        "id": 3,
+        "name": "Swamp",
+        "image": "assets/images/products/4/air_max_plus_se_3.png"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "image": "assets/images/products/5/free_metcon_2_training_1.png",
+    "name": "Nike Free X Metcon 2",
+    "normalPrice": 120,
+    "salePrice": 0,
+    "sizes": [37, 38, 39, 40, 41, 42, 43, 44],
+    "colors": [
+      {
+        "id": 1,
+        "name": "Ferrari",
+        "image": "assets/images/products/5/free_metcon_2_training_1.png"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "image": "assets/images/products/6/react_element_55_1.png",
+    "name": "Nike React Element 55",
+    "normalPrice": 130,
+    "salePrice": 90,
+    "sizes": [42, 43, 43.5, 44.5, 45.5],
+    "colors": [
+      {
+        "id": 1,
+        "name": "Navy",
+        "image": "assets/images/products/6/react_element_55_1.png"
+      },
+      {
+        "id": 2,
+        "name": "Cool",
+        "image": "assets/images/products/6/react_element_55_2.png"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "image": "assets/images/products/7/air_max_plus_1.png",
+    "name": "Nike Air Max Plus",
+    "normalPrice": 170,
+    "salePrice": 0,
+    "sizes": [37, 38, 39, 40, 41, 41.5, 42, 42.5, 43, 44, 44.5, 45, 45.5, 46, 46.5],
+    "colors": [
+      {
+        "id": 1,
+        "name": "Obsidian",
+        "image": "assets/images/products/7/air_max_plus_1.png"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "image": "assets/images/products/8/air_zoom_vapor_x_1.png",
+    "name": "NikeCourt Air Zoom Vapor X",
+    "normalPrice": 170,
+    "salePrice": 0,
+    "sizes": [37, 38, 39, 40, 41, 41.5, 42, 42.5, 43, 44, 44.5, 45, 45.5, 46, 46.5],
+    "colors": [
+      {
+        "id": 1,
+        "name": "White/Black",
+        "image": "assets/images/products/8/air_zoom_vapor_x_1.png"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "image": "assets/images/products/9/air_zoom_vomero_14_1.png",
+    "name": "Nike Air Zoom Vomero 14",
+    "normalPrice": 140,
+    "salePrice": 0,
+    "sizes": [39, 40, 41, 41.5, 42],
+    "colors": [
+      {
+        "id": 1,
+        "name": "Indigo",
+        "image": "assets/images/products/9/air_zoom_vomero_14_1.png"
+      },
+      {
+        "id": 2,
+        "name": "Seablue",
+        "image": "assets/images/products/9/air_zoom_vomero_14_2.png"
+      },
+      {
+        "id": 3,
+        "name": "Snowy",
+        "image": "assets/images/products/9/air_zoom_vomero_14_3.png"
+      },
+      {
+        "id": 4,
+        "name": "Dark",
+        "image": "assets/images/products/9/air_zoom_vomero_14_4.png"
+      },
+      {
+        "id": 5,
+        "name": "Thunder",
+        "image": "assets/images/products/9/air_zoom_vomero_14_5.png"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "image": "assets/images/products/10/air_vortex_1.png",
+    "name": "Nike Air Vortex",
+    "normalPrice": 90,
+    "salePrice": 0,
+    "sizes": [40, 41, 42, 43, 45, 45.5, 46.5, 47, 47.5],
+    "colors": [
+      {
+        "id": 1,
+        "name": "Oceanblue",
+        "image": "assets/images/products/10/air_vortex_1.png"
+      },
+      {
+        "id": 2,
+        "name": "Black",
+        "image": "assets/images/products/10/air_vortex_2.png"
+      }
+    ]
+  }
+]
