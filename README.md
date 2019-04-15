@@ -16,6 +16,7 @@ The store is functional, meaning that you can select product variations, add the
 - A toast message is shown for a few seconds when the user adds an item to the cart. It can be closed at will. Opening the cart also eliminates the toast.
 - If we add an item that is already in the cart, the quantity gets incremented by 1, otherwise a new item is created in the cart.
 - Changing quantity in the cart recalculates the subtotal and total price.
+- Sale price is shown for discounted items.
 
 ## Development server
 
